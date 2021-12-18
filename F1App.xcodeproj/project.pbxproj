@@ -20,7 +20,6 @@
 		E96364A42745744A00635860 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96364A32745744A00635860 /* ScheduleViewController.swift */; };
 		E96364A92745744B00635860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96364A82745744B00635860 /* Assets.xcassets */; };
 		E96364AC2745744B00635860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96364AA2745744B00635860 /* LaunchScreen.storyboard */; };
-		E98F0D14274672DF00488FB2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F0D13274672DF00488FB2 /* AppRouter.swift */; };
 		E98F0D162746746A00488FB2 /* ScheduleContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F0D152746746A00488FB2 /* ScheduleContracts.swift */; };
 		E98F4FEF274576EA004E7EF3 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F4FEE274576EA004E7EF3 /* Schedule.swift */; };
 		E98F4FF4274577AF004E7EF3 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F4FF3274577AF004E7EF3 /* Decoders.swift */; };
@@ -30,6 +29,7 @@
 		E98F50062745938B004E7EF3 /* SchedulePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F50052745938B004E7EF3 /* SchedulePresentation.swift */; };
 		E9B214F127469C0F00FFC2EF /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B214F027469C0F00FFC2EF /* ScheduleViewModel.swift */; };
 		E9B214F32746A5BB00FFC2EF /* ScheduleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B214F22746A5BB00FFC2EF /* ScheduleBuilder.swift */; };
+		E9DA86A4276DF4DE00114CFA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA86A3276DF4DE00114CFA /* AppRouter.swift */; };
 		EC69A6F721BCB40286AC25E4 /* Pods_F1App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC02BB55C46645DC6037E1 /* Pods_F1App.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,6 @@
 		E96364A82745744B00635860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96364AB2745744B00635860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96364AD2745744B00635860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E98F0D13274672DF00488FB2 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppRouter.swift; path = ../../../Desktop/AppRouter.swift; sourceTree = "<group>"; };
 		E98F0D152746746A00488FB2 /* ScheduleContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleContracts.swift; sourceTree = "<group>"; };
 		E98F4FEE274576EA004E7EF3 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		E98F4FF3274577AF004E7EF3 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		E98F50052745938B004E7EF3 /* SchedulePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresentation.swift; sourceTree = "<group>"; };
 		E9B214F027469C0F00FFC2EF /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		E9B214F22746A5BB00FFC2EF /* ScheduleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleBuilder.swift; sourceTree = "<group>"; };
+		E9DA86A3276DF4DE00114CFA /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,6 @@
 				E92CE5162748356E0089B0E3 /* Scenes */,
 				E96364A82745744B00635860 /* Assets.xcassets */,
 				E96364AA2745744B00635860 /* LaunchScreen.storyboard */,
-				E98F0D13274672DF00488FB2 /* AppRouter.swift */,
 			);
 			path = F1App;
 			sourceTree = "<group>";
@@ -199,6 +198,7 @@
 		E98F500327457AFD004E7EF3 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				E9DA86A3276DF4DE00114CFA /* AppRouter.swift */,
 				E963649F2745744A00635860 /* AppDelegate.swift */,
 				E96364A12745744A00635860 /* SceneDelegate.swift */,
 				E96364AD2745744B00635860 /* Info.plist */,
@@ -329,10 +329,10 @@
 				E9B214F32746A5BB00FFC2EF /* ScheduleBuilder.swift in Sources */,
 				E98F4FEF274576EA004E7EF3 /* Schedule.swift in Sources */,
 				E98F4FF6274577D5004E7EF3 /* Result.swift in Sources */,
+				E9DA86A4276DF4DE00114CFA /* AppRouter.swift in Sources */,
 				E90951832758E6E0002F4ED7 /* CircuitDetailBuilder.swift in Sources */,
 				E92F4BD92757A9000087B0D2 /* ScheduleViewCell.swift in Sources */,
 				E98F0D162746746A00488FB2 /* ScheduleContracts.swift in Sources */,
-				E98F0D14274672DF00488FB2 /* AppRouter.swift in Sources */,
 				E98F4FF92745780E004E7EF3 /* ScheduleResponse.swift in Sources */,
 				E98F500027457897004E7EF3 /* ScheduleService.swift in Sources */,
 				E96364A22745744A00635860 /* SceneDelegate.swift in Sources */,
